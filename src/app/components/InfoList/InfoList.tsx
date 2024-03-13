@@ -1,4 +1,4 @@
-import { InfoCardType, Pokemon } from "@/app/constants/types";
+import { Pokemon } from "@/app/constants/types";
 import InfoCard from "../InfoCard/InfoCard";
 import { SimpleGrid } from "@chakra-ui/react";
 import PokemonModal from "../PokemonModal/PokemonModal";
@@ -29,7 +29,7 @@ export default function InfoList({ data }: { data: any }) {
       />
       <SimpleGrid
         spacing={4}
-        templateColumns="repeat(auto-fill, minmax(400px, 1fr))"
+        templateColumns="repeat(auto-fill, minmax(200px, 1fr))"
       >
         {pokemons.length > 0 &&
           pokemons.map((item: Pokemon) => (

@@ -11,7 +11,6 @@ import {
   useDisclosure,
   Image,
 } from "@chakra-ui/react";
-import UserContext from "@/app/context/userContext";
 import { Pokemon } from "@/app/constants/types";
 
 export default function PokemonModal({
@@ -27,6 +26,7 @@ export default function PokemonModal({
 }) {
   const { isOpen, onOpen, onClose } = useDisclosure({});
 
+  //  filter from pokemon data to load the modal based on which id was clicked
   const pokemonById = pokemons.find((p: Pokemon) => {
     return p.id == pokemonId;
   });

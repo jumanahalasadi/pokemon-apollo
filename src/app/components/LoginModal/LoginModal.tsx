@@ -43,13 +43,16 @@ export default function LoginModal() {
     }
   }, [userCtx]);
 
+  // Switch modal slides using tabindex property for Chakra Tabs UI
+  // Slide 1 / TabIndex 0
   const handleSave = () => {
     if (tabIndex == 0) {
       setTabIndex(tabIndex + 1);
     }
+    // Slide 2 / TabIndex 1
     if (tabIndex == 1) {
       onClose();
-      setTabIndex(0);
+      setTabIndex(0); // reset back to first slide when modal is closed
     }
 
     userCtx.setUser({

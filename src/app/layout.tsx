@@ -7,8 +7,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Leonardo.Ai Submission",
-  description: "A next + graphql app",
+  title: "Leonardo.Ai Challenge - PokeAPI",
+  description: "A next + graphql app using PokeAPI",
 };
 
 export default function RootLayout({

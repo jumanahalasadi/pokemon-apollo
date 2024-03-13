@@ -8,6 +8,7 @@ import { useContext } from "react";
 import UserContext from "./context/userContext";
 import { Heading } from "@chakra-ui/react";
 
+/* Using window local storage causes issues with SSR */
 const DynamicLoginModal = dynamic(
   () => import("./components/LoginModal/LoginModal"),
   {

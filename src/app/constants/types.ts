@@ -1,7 +1,3 @@
-export type InfoCardType = {
-  title: string;
-};
-
 export type Pokemon = {
   name: string;
   image: string;
