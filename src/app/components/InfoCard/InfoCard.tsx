@@ -30,7 +30,6 @@ export default function InfoCard({
         </Stack>
         <CardFooter>
           <Button
-            colorScheme="red"
             title="Learn more"
             variant="solid"
             onClick={() => openModal(id)}

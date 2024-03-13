@@ -135,7 +135,6 @@ export default function LoginModal() {
               <Button
                 title="Next"
                 type="submit"
-                colorScheme="red"
                 mr={3}
                 isDisabled={tabIndex == 1 && (job === "" || username === "")}
               >
